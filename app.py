@@ -34,10 +34,13 @@ similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 
 st.title('Movie Mate')
+st.markdown("Welcome to our movie recommendation system!")
 
 sel_movie_name = st.selectbox(
     'Type or select a movie from the dropdown',
     movies['title'].values)
+
+st.write("What to watch next...")
 
 if st.button('Recommend'):
     names, posters = recommend(sel_movie_name)
@@ -66,3 +69,12 @@ if st.button('Recommend'):
 
 
         #c21c7d856d1942e6753b23a38e26822e
+
+
+tagline = "Built with ❤️ by Harshita Bhardwaj"
+
+# Displaying the tagline at the bottom with additional margin
+st.markdown(
+    f'<p style="text-align:center; margin-top: 250px; margin-bottom: 100px;">{tagline}</p>',
+    unsafe_allow_html=True
+)
