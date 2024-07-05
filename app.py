@@ -75,6 +75,6 @@ tagline = "Built with ❤️ by Harshita Bhardwaj"
 
 # Displaying the tagline at the bottom with additional margin
 st.markdown(
-    f'<p style="text-align:center; margin-top: 250px; margin-bottom: 100px;">{tagline}</p>',
+    f'<p style="text-align:center; margin-top: 200px; margin-bottom: 100px;">{tagline}</p>',
     unsafe_allow_html=True
 )
